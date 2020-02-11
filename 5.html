@@ -10,6 +10,11 @@
     <!--Exercise 5: 
 The list of owl facts may be important, but much less than the article. With which element would you wrap the list, to show that it contains information that is not essential to the page: section, aside, article, div? 
 
+section => thematische Gruppierung von Inhalten typischerweise mit einer Überschrift.
+article => Das article-Element stellt in sich geschlossene Abschnitte eines Dokuments dar, vergleichbar mit einem Zeitungsartikel. Es ergibt deshalb Sinn, innerhalb von article-Elementen weitere strukturierende Elemente wie header, section oder footer unterzubringen.
+aside => Das aside-Element umschließt laut Spezifikation Abschnitte einer Seite, deren Inhalt nur in einem indirekten Zusammenhang mit dem umgebenden Inhalt stehen.
+div => Das div-Element ist dazu gedacht, mehrere Elemente wie Text, Grafiken, Tabellen usw., in einen gemeinsamen Bereich einzuschließen. Dieses allgemeine Element bewirkt nichts weiter als dass es in einer neuen Zeile des Fließtextes beginnt. Ansonsten hat es keine Eigenschaften. Es ist dazu gedacht, Bereiche zu erzeugen, die mit Hilfe von CSS formatiert werden können. div bedeutet division, etwa Abteilung oder Bereich.
+
 Find out what these elements mean and make your choice! 
 -->
     <header>
@@ -32,10 +37,12 @@ Find out what these elements mean and make your choice!
         invertebrates such as insects are taken.
       </p>
     </article>
-    <ul>
-      <li>There are around 200 different owl species</li>
-      <li>Owls are active at night (nocturnal)</li>
-      <li>A group of owls is called a parliament</li>
-    </ul>
+    <aside>
+      <ul>
+        <li>There are around 200 different owl species</li>
+        <li>Owls are active at night (nocturnal)</li>
+        <li>A group of owls is called a parliament</li>
+      </ul>
+   </aside>
   </body>
 </html>

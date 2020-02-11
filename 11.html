@@ -9,7 +9,14 @@
   <body>
     <!--Almost finished, there is just one last exercise:
  On many web-pages there is a form to sign up for a newsletter, a checkbox which confirms that you read the terms of service and a button to submit your data. Please read about forms in your resources and try to code a form which contains the mentioned three parts.
-What does a label do? -->
+What does a label do? 
+
+=> Label click is good for usability
+
+=> The label text is not only visually associated with its corresponding text input; it is programmatically associated with it too. This means that, for example, a screenreader will read out the label when the user is focused on the form input, making it easier for an assistive technology user to understand what data should be entered.
+You can click the associated label to focus/activate the input, as well as the input itself. This increased hit area provides an advantage to anyone trying to activate the input, including those using a touch-screen device.
+
+-->
     <header>
       <h1>many owls</h1>
       <h2>there are many owls indeed</h2>
@@ -45,6 +52,23 @@ What does a label do? -->
       </ul>
     </aside>
     <footer>
+      <form action="" method="get">
+        <div>
+          <label for="name">Your name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="email">Your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <input type="checkbox" name="tos" id="tos"><label for="tos">Yes, I agree to the terms of service </label>
+        </div>
+        <div>
+          <input type="submit" value="Subscribe to newsletter">
+        </div>
+      </form>
+
       <a href=" https://en.wikipedia.org/wiki/Owl">Owls on wikipedia</a>
       <a href="https://unsplash.com/s/photos/owls">Owl pics!</a>
       <a href="#">Home</a>
